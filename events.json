@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Alice Smith",
+    "email": "alice@example.com",
+    "born": "1995-02-10",
+    "heard": "social"
+  },
+  {
+    "name": "Bob Johnson",
+    "email": "bob@example.com",
+    "born": "1988-07-22",
+    "heard": "friends"
+  },
+  {
+    "name": "Charlie Brown",
+    "email": "charlie@example.com",
+    "born": "1992-11-05",
+    "heard": "myself"
+  },
+  {
+    "name": "David Lee",
+    "email": "david@example.com",
+    "born": "1990-04-15",
+    "heard": "social"
+  },
+  {
+    "name": "Emma Wilson",
+    "email": "emma@example.com",
+    "born": "1985-09-30",
+    "heard": "friends"
+  },
+  {
+    "name": "Frank Martinez",
+    "email": "frank@example.com",
+    "born": "1987-12-18",
+    "heard": "myself"
+  },
+  {
+    "name": "Grace Taylor",
+    "email": "grace@example.com",
+    "born": "1993-06-25",
+    "heard": "social"
+  },
+  {
+    "name": "Henry White",
+    "email": "henry@example.com",
+    "born": "1989-03-12",
+    "heard": "friends"
+  },
+  {
+    "name": "Isabel Garcia",
+    "email": "isabel@example.com",
+    "born": "1997-08-05",
+    "heard": "myself"
+  },
+  {
+    "name": "Jack Brown",
+    "email": "jack@example.com",
+    "born": "1991-01-20",
+    "heard": "social"
+  }
+]
