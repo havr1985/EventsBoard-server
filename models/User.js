@@ -3,25 +3,28 @@ import { handleSaveError, runValidateAtUpdate } from "./hooks.js";
 
 const heardList = ["social", "friends", "myself"]
 
-const userSchema = new Schema({
+const userSchema = new Schema(
+  {
     name: {
-        type: String,
-        required: true,
+      type: String,
+      required: true,
     },
     email: {
-        type: String,
-        required: true,
+      type: String,
+      required: true,
     },
     born: {
-        type: Date,
-        required: true,
+      type: Date,
+      required: true,
     },
     heard: {
-        type: String,
-        enum: heardList,
+      type: String,
+      enum: heardList,
     },
-    
-}, { versionKey: false, timestamps: true });
+        subscribed: [],
+  },
+  { versionKey: false, timestamps: true }
+);
 
 userSchema.post("save", handleSaveError);
 userSchema.pre("findOneAndUpdate", runValidateAtUpdate);
