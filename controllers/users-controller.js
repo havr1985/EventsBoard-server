@@ -3,8 +3,8 @@ import User from "../models/User.js";
 import HttpError from "../helpers/HttpError.js"
 
 const addUser = async (req, res) => {
-  const { id } = req.params;
-  const { email } = req.body;
+  
+  const { email, id } = req.body;
 
   let isUser = await User.findOne({ email });
   console.log(isUser);

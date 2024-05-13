@@ -1,11 +1,15 @@
 import HttpError from "../helpers/HttpError.js";
 
-const valBody = (req, res, next) => {
-  const { length } = Object.keys(req.body);
-  if (!length) {
-    return next(HttpError(400, "Body must have fields !"));
-  }
-  next();
+
+const valBody = (schema) => {
+    const func = (req, res, next) => {
+        const { error } = schema.validate(req.body);
+        if (error) {
+            return next(HttpError(400, error.message));
+        }
+        next()
+    }
+    return func;
 };
 
 export default valBody;
