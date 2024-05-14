@@ -15,7 +15,6 @@ const eventSchema = new Schema(
     organizer: {
       type: String,
     },
-    
   },
   { versionKey: false, timestamps: true }
 );
@@ -24,7 +23,5 @@ eventSchema.post("save", handleSaveError);
 eventSchema.pre("findOneAndUpdate", runValidateAtUpdate);
 eventSchema.post("findOneAndUpdate", handleSaveError);
 
-const Event = model('event', eventSchema);
+const Event = model("event", eventSchema);
 export default Event;
-
-
